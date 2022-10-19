@@ -1,3 +1,5 @@
+//TO DO: Corrigir slider para telas menores do que 1024px
+
 var imgShow = 3;
 var maxIndex = Math.ceil($('.box-single-projetos').length / 3) - 1;
 var curIndex = 0;
@@ -5,13 +7,11 @@ var curIndex = 0;
 initSlider();
 navigateSlider();
 function initSlider(){
-    //Melhorar initSlider no futuro
     var amt = $('.box-single-projetos').length * 33.3;
     var elScroll = $('.wraper-slider');
     var elSingle = $('.box-single-projetos');
     elScroll.css('width',amt+'%');
-    elSingle.css('width',29*(100/amt)+'%');
-
+    elSingle.css('width',29*(100/amt)+'%');   
 }
 
 function navigateSlider(){
